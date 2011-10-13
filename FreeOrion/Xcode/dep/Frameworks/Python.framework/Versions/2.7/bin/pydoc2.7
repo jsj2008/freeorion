@@ -1,0 +1,7 @@
+#!/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+import sys
+sys.argv[0] = sys.argv[0].replace('2.7', '')
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

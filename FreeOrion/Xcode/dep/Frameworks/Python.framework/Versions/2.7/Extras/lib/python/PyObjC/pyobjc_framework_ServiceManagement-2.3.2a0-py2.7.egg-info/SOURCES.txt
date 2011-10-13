@@ -1,0 +1,9 @@
+README.txt
+setup.py
+Lib/ServiceManagement/__init__.py
+Lib/pyobjc_framework_ServiceManagement.egg-info/PKG-INFO
+Lib/pyobjc_framework_ServiceManagement.egg-info/SOURCES.txt
+Lib/pyobjc_framework_ServiceManagement.egg-info/dependency_links.txt
+Lib/pyobjc_framework_ServiceManagement.egg-info/not-zip-safe
+Lib/pyobjc_framework_ServiceManagement.egg-info/requires.txt
+Lib/pyobjc_framework_ServiceManagement.egg-info/top_level.txt

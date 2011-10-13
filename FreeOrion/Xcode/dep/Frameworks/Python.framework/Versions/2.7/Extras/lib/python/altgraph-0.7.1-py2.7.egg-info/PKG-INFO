@@ -1,0 +1,41 @@
+Metadata-Version: 1.0
+Name: altgraph
+Version: 0.7.1
+Summary: Python graph (network) package
+Home-page: http://undefined.org/python/#altgraph
+Author: Ronald Oussoren
+Author-email: ronaldoussoren@mac.com
+License: MIT License
+Description: 
+        altgraph is a fork of graphlib: a graph (network) package for constructing
+        graphs, BFS and DFS traversals, topological sort, shortest paths, etc. with
+        graphviz output.
+        
+        altgraph includes some additional usage of Python 2.3+ features and
+        enhancements related to modulegraph and macholib.
+        
+        NEWS
+        ====
+        
+        0.7.0
+        -----
+        
+        This is a minor feature release.
+        
+        Features:
+        
+        - Support for Python 3
+        
+        - It is now possible to run tests using 'python setup.py test'
+        
+          (The actual testsuite is still very minimal though)
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization

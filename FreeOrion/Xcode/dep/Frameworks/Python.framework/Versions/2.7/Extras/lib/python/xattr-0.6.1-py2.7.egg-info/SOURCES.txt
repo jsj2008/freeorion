@@ -1,0 +1,13 @@
+README.txt
+setup.cfg
+setup.py
+xattr/__init__.py
+xattr/_xattr.c
+xattr/constants.py
+xattr/tool.py
+xattr.egg-info/PKG-INFO
+xattr.egg-info/SOURCES.txt
+xattr.egg-info/dependency_links.txt
+xattr.egg-info/entry_points.txt
+xattr.egg-info/not-zip-safe
+xattr.egg-info/top_level.txt

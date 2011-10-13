@@ -1,0 +1,56 @@
+Metadata-Version: 1.0
+Name: modulegraph
+Version: 0.8.1
+Summary: Python module dependency analysis tool
+Home-page: http://undefined.org/python/#modulegraph
+Author: Ronald Oussoren
+Author-email: ronaldoussoren@mac.com
+License: MIT License
+Description: 
+        modulegraph determines a dependency graph between Python modules primarily
+        by bytecode analysis for import statements.
+        
+        modulegraph uses similar methods to modulefinder from the standard library,
+        but uses a more flexible internal representation, has more extensive 
+        knowledge of special cases, and is extensible.
+        
+        NEWS
+        ====
+        
+        0.8.1
+        -----
+        
+        This is a minor feature release
+        
+        Features:
+        
+        - ``from __future__ import absolute_import`` is now supported
+        
+        - Relative imports (``from . import module``) are now supported
+        
+        - Add support for namespace packages when those are installed
+          using option ``--single-version-externally-managed`` (part
+          of setuptools/distribute)
+        
+        0.8
+        ---
+        
+        This is a minor feature release
+        
+        Features:
+        
+        - Initial support for Python 3.x
+        
+        - It is now possible to run the test suite
+          using ``python setup.py test``.
+        
+          (The actual test suite is still fairly minimal though)
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Build Tools

@@ -1,0 +1,9 @@
+#!/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+# EASY-INSTALL-ENTRY-SCRIPT: 'bdist-mpkg==0.4.4','console_scripts','bdist_mpkg'
+__requires__ = 'bdist-mpkg==0.4.4'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(
+   load_entry_point('bdist-mpkg==0.4.4', 'console_scripts', 'bdist_mpkg')()
+)

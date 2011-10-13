@@ -1,0 +1,9 @@
+#!/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+# EASY-INSTALL-ENTRY-SCRIPT: 'py2app==0.5.3','console_scripts','py2applet'
+__requires__ = 'py2app==0.5.3'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(
+   load_entry_point('py2app==0.5.3', 'console_scripts', 'py2applet')()
+)

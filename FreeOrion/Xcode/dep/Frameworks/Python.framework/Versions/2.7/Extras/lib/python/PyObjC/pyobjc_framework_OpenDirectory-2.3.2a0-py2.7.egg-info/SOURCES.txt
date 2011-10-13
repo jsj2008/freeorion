@@ -1,0 +1,10 @@
+README.txt
+setup.py
+Lib/CFOpenDirectory/__init__.py
+Lib/OpenDirectory/__init__.py
+Lib/pyobjc_framework_OpenDirectory.egg-info/PKG-INFO
+Lib/pyobjc_framework_OpenDirectory.egg-info/SOURCES.txt
+Lib/pyobjc_framework_OpenDirectory.egg-info/dependency_links.txt
+Lib/pyobjc_framework_OpenDirectory.egg-info/not-zip-safe
+Lib/pyobjc_framework_OpenDirectory.egg-info/requires.txt
+Lib/pyobjc_framework_OpenDirectory.egg-info/top_level.txt
