@@ -142,7 +142,6 @@
 		471024260CEF3AAC00A7DF2B /* PtRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471023B50CEF3AAC00A7DF2B /* PtRect.cpp */; };
 		471024270CEF3AAC00A7DF2B /* Scroll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471023B70CEF3AAC00A7DF2B /* Scroll.cpp */; };
 		471024280CEF3AAC00A7DF2B /* SDLGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471023BA0CEF3AAC00A7DF2B /* SDLGUI.cpp */; };
-		471024290CEF3AAC00A7DF2B /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471023BB0CEF3AAC00A7DF2B /* Slider.cpp */; };
 		4710242A0CEF3AAC00A7DF2B /* StaticGraphic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471023BC0CEF3AAC00A7DF2B /* StaticGraphic.cpp */; };
 		4710242B0CEF3AAC00A7DF2B /* StyleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471023BD0CEF3AAC00A7DF2B /* StyleFactory.cpp */; };
 		4710242C0CEF3AAC00A7DF2B /* TabWnd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471023BE0CEF3AAC00A7DF2B /* TabWnd.cpp */; };
@@ -275,6 +274,7 @@
 		47FAB6770A98D89F00F0AF3F /* dmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5C9F0A98A3F900DA9C21 /* dmain.cpp */; };
 		47FAB6780A98D8A600F0AF3F /* ServerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CA20A98A3F900DA9C21 /* ServerApp.cpp */; };
 		47FAB7490A98DE2F00F0AF3F /* liblog4cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471D65510A98B7F800DA9C21 /* liblog4cpp.a */; };
+		9E207624143F986400A70502 /* ReportParseError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E207623143F986400A70502 /* ReportParseError.cpp */; };
 		9E584199140691E000527C72 /* ConditionParser3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E584198140691E000527C72 /* ConditionParser3.cpp */; };
 		9E632AE413AD24C8003D1874 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7313ACB91A0085B1A0 /* libboost_filesystem.a */; };
 		9E632AE513AD24C8003D1874 /* libboost_python.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7413ACB91A0085B1A0 /* libboost_python.a */; };
@@ -292,8 +292,7 @@
 		9E632AF113AD24D1003D1874 /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7913ACB91A0085B1A0 /* libboost_thread.a */; };
 		9EB770D71407D90B00BFDEEE /* ConditionParser3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E584198140691E000527C72 /* ConditionParser3.cpp */; };
 		9EB770D81407DBDA00BFDEEE /* ConditionParser3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E584198140691E000527C72 /* ConditionParser3.cpp */; };
-		9EEEEA7013ACB3430085B1A0 /* ogre_plugins.cfg in Copy Config */ = {isa = PBXBuildFile; fileRef = 3484E98E0F59A04D0083041E /* ogre_plugins.cfg */; };
-		9EEEEA7213ACB3800085B1A0 /* OISInput.cfg in Copy Config */ = {isa = PBXBuildFile; fileRef = 9EEEEA7113ACB3800085B1A0 /* OISInput.cfg */; };
+		9EEEEA7013ACB3430085B1A0 /* ogre_plugins.cfg in Copy Config and Changelog */ = {isa = PBXBuildFile; fileRef = 3484E98E0F59A04D0083041E /* ogre_plugins.cfg */; };
 		9EEEEA7A13ACB91A0085B1A0 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7313ACB91A0085B1A0 /* libboost_filesystem.a */; };
 		9EEEEA7B13ACB91A0085B1A0 /* libboost_python.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7413ACB91A0085B1A0 /* libboost_python.a */; };
 		9EEEEA7D13ACB91A0085B1A0 /* libboost_serialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7613ACB91A0085B1A0 /* libboost_serialization.a */; };
@@ -467,16 +466,15 @@
 			name = "Copy Ogre Plugins";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EEEEA6D13ACB2CB0085B1A0 /* Copy Config */ = {
+		9EEEEA6D13ACB2CB0085B1A0 /* Copy Config and Changelog */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				9EEEEA7213ACB3800085B1A0 /* OISInput.cfg in Copy Config */,
-				9EEEEA7013ACB3430085B1A0 /* ogre_plugins.cfg in Copy Config */,
+				9EEEEA7013ACB3430085B1A0 /* ogre_plugins.cfg in Copy Config and Changelog */,
 			);
-			name = "Copy Config";
+			name = "Copy Config and Changelog";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1233,7 +1231,6 @@
 		471023B50CEF3AAC00A7DF2B /* PtRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PtRect.cpp; sourceTree = "<group>"; };
 		471023B70CEF3AAC00A7DF2B /* Scroll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scroll.cpp; sourceTree = "<group>"; };
 		471023BA0CEF3AAC00A7DF2B /* SDLGUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLGUI.cpp; sourceTree = "<group>"; };
-		471023BB0CEF3AAC00A7DF2B /* Slider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Slider.cpp; sourceTree = "<group>"; };
 		471023BC0CEF3AAC00A7DF2B /* StaticGraphic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StaticGraphic.cpp; sourceTree = "<group>"; };
 		471023BD0CEF3AAC00A7DF2B /* StyleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StyleFactory.cpp; sourceTree = "<group>"; };
 		471023BE0CEF3AAC00A7DF2B /* TabWnd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TabWnd.cpp; sourceTree = "<group>"; };
@@ -1479,10 +1476,12 @@
 		47B616090CF09ADC00318761 /* alutVersion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alutVersion.c; sourceTree = "<group>"; };
 		47B6160A0CF09ADC00318761 /* alutWaveform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alutWaveform.c; sourceTree = "<group>"; };
 		47B6160B0CF09ADC00318761 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		47F266880CF1B87C003860F4 /* RELEASE-NOTES-V03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "RELEASE-NOTES-V03.txt"; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* FreeOrion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FreeOrion; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E207623143F986400A70502 /* ReportParseError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReportParseError.cpp; sourceTree = "<group>"; };
+		9E207625143F98A500A70502 /* LexerFwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexerFwd.h; sourceTree = "<group>"; };
+		9E207626143F98A500A70502 /* ReportParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportParseError.h; sourceTree = "<group>"; };
+		9E207627143F98CF00A70502 /* CUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUISlider.h; sourceTree = "<group>"; };
 		9E584198140691E000527C72 /* ConditionParser3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConditionParser3.cpp; sourceTree = "<group>"; };
-		9EEEEA7113ACB3800085B1A0 /* OISInput.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = OISInput.cfg; path = ../GG/src/Ogre/Plugins/OISInput.cfg; sourceTree = "<group>"; };
 		9EEEEA7313ACB91A0085B1A0 /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_filesystem.a; sourceTree = "<group>"; };
 		9EEEEA7413ACB91A0085B1A0 /* libboost_python.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_python.a; sourceTree = "<group>"; };
 		9EEEEA7513ACB91A0085B1A0 /* libboost_regex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_regex.a; sourceTree = "<group>"; };
@@ -1873,7 +1872,6 @@
 		34B9EBEF0F5E208F005BF6A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9EEEEA7113ACB3800085B1A0 /* OISInput.cfg */,
 				34DD943911360BFA00265AF9 /* main.nib */,
 				3484E98E0F59A04D0083041E /* ogre_plugins.cfg */,
 				471033FE0CEF7BCB00A7DF2B /* FreeOrion.icns */,
@@ -2469,6 +2467,8 @@
 		4710233E0CEF3AAB00A7DF2B /* GG */ = {
 			isa = PBXGroup;
 			children = (
+				9E207625143F98A500A70502 /* LexerFwd.h */,
+				9E207626143F98A500A70502 /* ReportParseError.h */,
 				2F60966C12EEAF2C00F58913 /* GroupBox.h */,
 				34C9B34711DA2ECA003695F4 /* ClrConstants.h */,
 				34BAB0C40FC5CF9E00EF792E /* adobe */,
@@ -2616,9 +2616,9 @@
 				471023B30CEF3AAC00A7DF2B /* Plugin.cpp */,
 				471023B40CEF3AAC00A7DF2B /* PluginInterface.cpp */,
 				471023B50CEF3AAC00A7DF2B /* PtRect.cpp */,
+				9E207623143F986400A70502 /* ReportParseError.cpp */,
 				471023B70CEF3AAC00A7DF2B /* Scroll.cpp */,
 				471023B80CEF3AAC00A7DF2B /* SDL */,
-				471023BB0CEF3AAC00A7DF2B /* Slider.cpp */,
 				471023BC0CEF3AAC00A7DF2B /* StaticGraphic.cpp */,
 				471023BD0CEF3AAC00A7DF2B /* StyleFactory.cpp */,
 				471023BE0CEF3AAC00A7DF2B /* TabWnd.cpp */,
@@ -2701,7 +2701,6 @@
 		471D59B00A988A2A00DA9C21 /* FreeOrion */ = {
 			isa = PBXGroup;
 			children = (
-				47F266880CF1B87C003860F4 /* RELEASE-NOTES-V03.txt */,
 				47102F9D0CEF562700A7DF2B /* AI */,
 				471023380CEF3AAB00A7DF2B /* GG */,
 				471D5C580A98A3F900DA9C21 /* client */,
@@ -2891,6 +2890,7 @@
 				34A70290118360090013F8C6 /* CombatWndFwd.h */,
 				3415B09E10851BB200009F19 /* CombatSetupWnd.cpp */,
 				3415B09F10851BB200009F19 /* CombatSetupWnd.h */,
+				9E207627143F98CF00A70502 /* CUISlider.h */,
 				346D87ED0FC5F6080095593E /* ShaderProgram.cpp */,
 				346D87EE0FC5F6080095593E /* ShaderProgram.h */,
 				3402E2360F5A30D600DF6FE7 /* PagedGeometry */,
@@ -3210,7 +3210,7 @@
 				3402E53C0F5A33E300DF6FE7 /* Copy Client */,
 				3402EB620F5A345D00DF6FE7 /* Copy Shared Libraries */,
 				3402EB750F5A34FC00DF6FE7 /* Copy Server, AI, Config */,
-				9EEEEA6D13ACB2CB0085B1A0 /* Copy Config */,
+				9EEEEA6D13ACB2CB0085B1A0 /* Copy Config and Changelog */,
 				34DD943D11360C5700265AF9 /* Copy Ogre Plugins */,
 			);
 			buildRules = (
@@ -3349,7 +3349,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "FreeOrion" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3492,7 +3492,6 @@
 				471024260CEF3AAC00A7DF2B /* PtRect.cpp in Sources */,
 				471024270CEF3AAC00A7DF2B /* Scroll.cpp in Sources */,
 				471024280CEF3AAC00A7DF2B /* SDLGUI.cpp in Sources */,
-				471024290CEF3AAC00A7DF2B /* Slider.cpp in Sources */,
 				4710242A0CEF3AAC00A7DF2B /* StaticGraphic.cpp in Sources */,
 				4710242B0CEF3AAC00A7DF2B /* StyleFactory.cpp in Sources */,
 				4710242C0CEF3AAC00A7DF2B /* TabWnd.cpp in Sources */,
@@ -3506,6 +3505,7 @@
 				471024A90CEF3DF100A7DF2B /* PluginInterface.cpp in Sources */,
 				343EC6340F3F513700782AD3 /* UnicodeCharsets.cpp in Sources */,
 				34BAB0BF0FC5CD7300EF792E /* AdamGlue.cpp in Sources */,
+				9E207624143F986400A70502 /* ReportParseError.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
