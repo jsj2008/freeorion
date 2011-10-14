@@ -1,0 +1,3 @@
+[submodule "FreeOrion/GG"]
+	path = FreeOrion/GG
+	url = git://github.com/zweizeichen/GG.git
