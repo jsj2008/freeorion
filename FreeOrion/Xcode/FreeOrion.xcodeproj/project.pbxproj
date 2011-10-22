@@ -292,6 +292,14 @@
 		9E632AF113AD24D1003D1874 /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7913ACB91A0085B1A0 /* libboost_thread.a */; };
 		9EB770D71407D90B00BFDEEE /* ConditionParser3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E584198140691E000527C72 /* ConditionParser3.cpp */; };
 		9EB770D81407DBDA00BFDEEE /* ConditionParser3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E584198140691E000527C72 /* ConditionParser3.cpp */; };
+		9EDC04B21452C40500177A85 /* ObjectMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B01452C40500177A85 /* ObjectMap.cpp */; };
+		9EDC04B31452C40500177A85 /* ObjectMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B01452C40500177A85 /* ObjectMap.cpp */; };
+		9EDC04B41452C48400177A85 /* ObjectMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B01452C40500177A85 /* ObjectMap.cpp */; };
+		9EDC04B51452C4BB00177A85 /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CEF0A98A3F900DA9C21 /* Effect.cpp */; };
+		9EDC04B61452C4DB00177A85 /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CEF0A98A3F900DA9C21 /* Effect.cpp */; };
+		9EDC04B91452C53700177A85 /* EffectAccounting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B71452C53700177A85 /* EffectAccounting.cpp */; };
+		9EDC04BA1452C53700177A85 /* EffectAccounting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B71452C53700177A85 /* EffectAccounting.cpp */; };
+		9EDC04BB1452C53700177A85 /* EffectAccounting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B71452C53700177A85 /* EffectAccounting.cpp */; };
 		9EEEEA7013ACB3430085B1A0 /* ogre_plugins.cfg in Copy Config and Changelog */ = {isa = PBXBuildFile; fileRef = 3484E98E0F59A04D0083041E /* ogre_plugins.cfg */; };
 		9EEEEA7A13ACB91A0085B1A0 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7313ACB91A0085B1A0 /* libboost_filesystem.a */; };
 		9EEEEA7B13ACB91A0085B1A0 /* libboost_python.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7413ACB91A0085B1A0 /* libboost_python.a */; };
@@ -1482,6 +1490,10 @@
 		9E207626143F98A500A70502 /* ReportParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportParseError.h; sourceTree = "<group>"; };
 		9E207627143F98CF00A70502 /* CUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUISlider.h; sourceTree = "<group>"; };
 		9E584198140691E000527C72 /* ConditionParser3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConditionParser3.cpp; sourceTree = "<group>"; };
+		9EDC04B01452C40500177A85 /* ObjectMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectMap.cpp; sourceTree = "<group>"; };
+		9EDC04B11452C40500177A85 /* ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMap.h; sourceTree = "<group>"; };
+		9EDC04B71452C53700177A85 /* EffectAccounting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectAccounting.cpp; sourceTree = "<group>"; };
+		9EDC04B81452C53700177A85 /* EffectAccounting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectAccounting.h; sourceTree = "<group>"; };
 		9EEEEA7313ACB91A0085B1A0 /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_filesystem.a; sourceTree = "<group>"; };
 		9EEEEA7413ACB91A0085B1A0 /* libboost_python.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_python.a; sourceTree = "<group>"; };
 		9EEEEA7513ACB91A0085B1A0 /* libboost_regex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_regex.a; sourceTree = "<group>"; };
@@ -2994,6 +3006,8 @@
 				471D5CEC0A98A3F900DA9C21 /* doc */,
 				471D5CEF0A98A3F900DA9C21 /* Effect.cpp */,
 				471D5CF00A98A3F900DA9C21 /* Effect.h */,
+				9EDC04B71452C53700177A85 /* EffectAccounting.cpp */,
+				9EDC04B81452C53700177A85 /* EffectAccounting.h */,
 				471D5CF10A98A3F900DA9C21 /* EffectParser.cpp */,
 				471D5CF20A98A3F900DA9C21 /* Enums.cpp */,
 				471D5CF30A98A3F900DA9C21 /* Enums.h */,
@@ -3002,6 +3016,8 @@
 				471D5CF50A98A3F900DA9C21 /* Fleet.h */,
 				471D5CF60A98A3F900DA9C21 /* InhibitableSignal.h */,
 				471D5CF70A98A3F900DA9C21 /* Meter.cpp */,
+				9EDC04B01452C40500177A85 /* ObjectMap.cpp */,
+				9EDC04B11452C40500177A85 /* ObjectMap.h */,
 				471D5CF90A98A3F900DA9C21 /* Parser.h */,
 				471D5CFA0A98A3F900DA9C21 /* ParserUtil.cpp */,
 				471D5CFB0A98A3F900DA9C21 /* ParserUtil.h */,
@@ -3516,6 +3532,7 @@
 				47FAB64D0A98D83B00F0AF3F /* AppInterface.cpp in Sources */,
 				478417770CF058C900BE4710 /* Universe.cpp in Sources */,
 				47FAB6770A98D89F00F0AF3F /* dmain.cpp in Sources */,
+				9EDC04B51452C4BB00177A85 /* Effect.cpp in Sources */,
 				47FAB6780A98D8A600F0AF3F /* ServerApp.cpp in Sources */,
 				471032540CEF6C9700A7DF2B /* ServerNetworking.cpp in Sources */,
 				471032600CEF6D0D00A7DF2B /* ServerFSM.cpp in Sources */,
@@ -3523,6 +3540,8 @@
 				2F6096CE12EF046500F58913 /* ClientApp.cpp in Sources */,
 				2F6096CF12EF046B00F58913 /* ClientNetworking.cpp in Sources */,
 				9E584199140691E000527C72 /* ConditionParser3.cpp in Sources */,
+				9EDC04B21452C40500177A85 /* ObjectMap.cpp in Sources */,
+				9EDC04BA1452C53700177A85 /* EffectAccounting.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3534,6 +3553,7 @@
 				471FEFB30A9A629800C36AA3 /* Universe.cpp in Sources */,
 				471FEFDE0A9A631C00C36AA3 /* AIClientApp.cpp in Sources */,
 				471FEFDF0A9A632000C36AA3 /* camain.cpp in Sources */,
+				9EDC04B61452C4DB00177A85 /* Effect.cpp in Sources */,
 				471033860CEF721B00A7DF2B /* PythonAI.cpp in Sources */,
 				4710338A0CEF723900A7DF2B /* AIInterface.cpp in Sources */,
 				343EC67A0F3F61D000782AD3 /* PythonEmpireWrapper.cpp in Sources */,
@@ -3541,6 +3561,8 @@
 				343EC67C0F3F61D000782AD3 /* PythonLoggingWrapper.cpp in Sources */,
 				343EC67D0F3F61D000782AD3 /* PythonUniverseWrapper.cpp in Sources */,
 				9EB770D71407D90B00BFDEEE /* ConditionParser3.cpp in Sources */,
+				9EDC04B31452C40500177A85 /* ObjectMap.cpp in Sources */,
+				9EDC04BB1452C53700177A85 /* EffectAccounting.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3637,6 +3659,8 @@
 				2F22EC0612F7F4CF00456CDE /* TechTreeLayout.cpp in Sources */,
 				2F276A3B130401E000153050 /* GLClientAndServerBuffer.cpp in Sources */,
 				9EB770D81407DBDA00BFDEEE /* ConditionParser3.cpp in Sources */,
+				9EDC04B41452C48400177A85 /* ObjectMap.cpp in Sources */,
+				9EDC04B91452C53700177A85 /* EffectAccounting.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3762,7 +3786,7 @@
 					__MACOSX__,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = 4.0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
