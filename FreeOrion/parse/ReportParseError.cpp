@@ -1,5 +1,9 @@
 #include "ReportParseError.h"
 
+#include "../util/AppInterface.h"
+
+#include <boost/algorithm/string/classification.hpp>
+
 
 parse::detail::info_visitor::info_visitor(std::ostream& os, const string& tag, std::size_t indent) :
     m_os(os),
@@ -88,7 +92,7 @@ void parse::detail::pretty_print(std::ostream& os, boost::spirit::info const& wh
 }
 
 void parse::detail::default_send_error_string(const std::string& str)
-{ std::cerr << str; }
+{ Logger().errorStream() << str; }
 
 const char* parse::detail::s_filename = 0;
 parse::text_iterator* parse::detail::s_text_it = 0;
@@ -145,6 +149,16 @@ void parse::report_error_::generate_error_string(const token_iterator& first,
         if (text_it != detail::s_end)
             ++text_it;
     }
+
+    {
+        text_iterator text_it_copy = text_it;
+        while (text_it_copy != detail::s_end && boost::algorithm::is_space()(*text_it_copy)) {
+            ++text_it_copy;
+        }
+        if (text_it_copy != detail::s_end)
+            text_it = text_it_copy;
+    }
+
     boost::tie(line_start, line_number) = line_start_and_line_number(text_it);
     std::size_t column_number = std::distance(line_start, text_it);
 
