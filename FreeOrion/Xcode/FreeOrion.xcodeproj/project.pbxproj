@@ -175,7 +175,6 @@
 		47103BF90CF04E5900A7DF2B /* XMLDoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5D3C0A98A3F900DA9C21 /* XMLDoc.cpp */; };
 		47103BFA0CF04E5900A7DF2B /* Building.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CE50A98A3F900DA9C21 /* Building.cpp */; };
 		47103BFB0CF04E5900A7DF2B /* Condition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CE70A98A3F900DA9C21 /* Condition.cpp */; };
-		47103BFF0CF04E5900A7DF2B /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CEF0A98A3F900DA9C21 /* Effect.cpp */; };
 		47103C010CF04E5900A7DF2B /* Enums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CF20A98A3F900DA9C21 /* Enums.cpp */; };
 		47103C020CF04E5900A7DF2B /* Fleet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CF40A98A3F900DA9C21 /* Fleet.cpp */; };
 		47103C030CF04E5900A7DF2B /* Meter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CF70A98A3F900DA9C21 /* Meter.cpp */; };
@@ -266,7 +265,45 @@
 		47FAB6770A98D89F00F0AF3F /* dmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5C9F0A98A3F900DA9C21 /* dmain.cpp */; };
 		47FAB6780A98D8A600F0AF3F /* ServerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CA20A98A3F900DA9C21 /* ServerApp.cpp */; };
 		47FAB7490A98DE2F00F0AF3F /* liblog4cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471D65510A98B7F800DA9C21 /* liblog4cpp.a */; };
+		9E1FEC7214A88E49002217DA /* UniverseServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E1FEC7114A88E49002217DA /* UniverseServer.cpp */; };
+		9E1FEC7614A88E8E002217DA /* Names.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E1FEC7414A88E8E002217DA /* Names.cpp */; };
+		9E1FEC7714A88E8E002217DA /* Names.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E1FEC7414A88E8E002217DA /* Names.cpp */; };
+		9E1FEC7914A893B3002217DA /* memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34BAB1FB0FC5D02600EF792E /* memory.cpp */; };
+		9E1FEC7A14A893B3002217DA /* name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34BAB1FC0FC5D02600EF792E /* name.cpp */; };
+		9E1FEC7B14A893B3002217DA /* string_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34BAB1FF0FC5D02600EF792E /* string_pool.cpp */; };
 		9E207624143F986400A70502 /* ReportParseError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E207623143F986400A70502 /* ReportParseError.cpp */; };
+		9E617D3C149F87BB002D5D93 /* AlignmentsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F31476EE8D0036C477 /* AlignmentsParser.cpp */; };
+		9E617D3D149F87BB002D5D93 /* BuildingsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F41476EE8D0036C477 /* BuildingsParser.cpp */; };
+		9E617D3E149F87BB002D5D93 /* ConditionParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F51476EE8D0036C477 /* ConditionParser.cpp */; };
+		9E617D40149F87BB002D5D93 /* ConditionParser1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F71476EE8D0036C477 /* ConditionParser1.cpp */; };
+		9E617D41149F87BB002D5D93 /* ConditionParser2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F81476EE8D0036C477 /* ConditionParser2.cpp */; };
+		9E617D42149F87BB002D5D93 /* ConditionParser3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F91476EE8D0036C477 /* ConditionParser3.cpp */; };
+		9E617D44149F87BB002D5D93 /* Double.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722FB1476EE8D0036C477 /* Double.cpp */; };
+		9E617D46149F87BB002D5D93 /* DoubleValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722FD1476EE8D0036C477 /* DoubleValueRefParser.cpp */; };
+		9E617D47149F87BB002D5D93 /* EffectParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722FE1476EE8D0036C477 /* EffectParser.cpp */; };
+		9E617D49149F87BB002D5D93 /* EnumParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723001476EE8D0036C477 /* EnumParser.cpp */; };
+		9E617D4B149F87BB002D5D93 /* FleetPlansParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723021476EE8D0036C477 /* FleetPlansParser.cpp */; };
+		9E617D4C149F87BB002D5D93 /* Int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723041476EE8D0036C477 /* Int.cpp */; };
+		9E617D4E149F87BB002D5D93 /* IntValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723061476EE8D0036C477 /* IntValueRefParser.cpp */; };
+		9E617D4F149F87BB002D5D93 /* ItemsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723071476EE8D0036C477 /* ItemsParser.cpp */; };
+		9E617D50149F87BB002D5D93 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723081476EE8D0036C477 /* Label.cpp */; };
+		9E617D52149F87BB002D5D93 /* Lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7230A1476EE8D0036C477 /* Lexer.cpp */; };
+		9E617D54149F87BB002D5D93 /* MonsterFleetPlansParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7230C1476EE8D0036C477 /* MonsterFleetPlansParser.cpp */; };
+		9E617D55149F87BB002D5D93 /* Parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7230D1476EE8D0036C477 /* Parse.cpp */; };
+		9E617D58149F87BB002D5D93 /* PlanetEnvironmentValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723111476EE8D0036C477 /* PlanetEnvironmentValueRefParser.cpp */; };
+		9E617D59149F87BB002D5D93 /* PlanetSizeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723121476EE8D0036C477 /* PlanetSizeValueRefParser.cpp */; };
+		9E617D5A149F87BB002D5D93 /* PlanetTypeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723131476EE8D0036C477 /* PlanetTypeValueRefParser.cpp */; };
+		9E617D5B149F87BB002D5D93 /* ReportParseError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723141476EE8D0036C477 /* ReportParseError.cpp */; };
+		9E617D5D149F87BB002D5D93 /* ShipDesignsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723161476EE8D0036C477 /* ShipDesignsParser.cpp */; };
+		9E617D5E149F87BB002D5D93 /* ShipHullsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723171476EE8D0036C477 /* ShipHullsParser.cpp */; };
+		9E617D5F149F87BB002D5D93 /* ShipPartsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723181476EE8D0036C477 /* ShipPartsParser.cpp */; };
+		9E617D60149F87BB002D5D93 /* SpecialsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723191476EE8D0036C477 /* SpecialsParser.cpp */; };
+		9E617D61149F87BB002D5D93 /* SpeciesParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231A1476EE8D0036C477 /* SpeciesParser.cpp */; };
+		9E617D62149F87BB002D5D93 /* StarTypeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231B1476EE8D0036C477 /* StarTypeValueRefParser.cpp */; };
+		9E617D63149F87BB002D5D93 /* StringValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231C1476EE8D0036C477 /* StringValueRefParser.cpp */; };
+		9E617D64149F87BB002D5D93 /* TechsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231D1476EE8D0036C477 /* TechsParser.cpp */; };
+		9E617D65149F87BB002D5D93 /* UniverseObjectTypeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231F1476EE8D0036C477 /* UniverseObjectTypeValueRefParser.cpp */; };
+		9E617D68149F87D4002D5D93 /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471D5CEF0A98A3F900DA9C21 /* Effect.cpp */; };
 		9E632AE413AD24C8003D1874 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7313ACB91A0085B1A0 /* libboost_filesystem.a */; };
 		9E632AE513AD24C8003D1874 /* libboost_python.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7413ACB91A0085B1A0 /* libboost_python.a */; };
 		9E632AE613AD24C8003D1874 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7513ACB91A0085B1A0 /* libboost_regex.a */; };
@@ -289,37 +326,6 @@
 		9EDC04B91452C53700177A85 /* EffectAccounting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B71452C53700177A85 /* EffectAccounting.cpp */; };
 		9EDC04BA1452C53700177A85 /* EffectAccounting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B71452C53700177A85 /* EffectAccounting.cpp */; };
 		9EDC04BB1452C53700177A85 /* EffectAccounting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC04B71452C53700177A85 /* EffectAccounting.cpp */; };
-		9EE723221476EE8D0036C477 /* AlignmentsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F31476EE8D0036C477 /* AlignmentsParser.cpp */; };
-		9EE723231476EE8D0036C477 /* BuildingsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F41476EE8D0036C477 /* BuildingsParser.cpp */; };
-		9EE723241476EE8D0036C477 /* ConditionParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F51476EE8D0036C477 /* ConditionParser.cpp */; };
-		9EE723251476EE8D0036C477 /* ConditionParser1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F71476EE8D0036C477 /* ConditionParser1.cpp */; };
-		9EE723261476EE8D0036C477 /* ConditionParser2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F81476EE8D0036C477 /* ConditionParser2.cpp */; };
-		9EE723271476EE8D0036C477 /* ConditionParser3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722F91476EE8D0036C477 /* ConditionParser3.cpp */; };
-		9EE723281476EE8D0036C477 /* Double.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722FB1476EE8D0036C477 /* Double.cpp */; };
-		9EE723291476EE8D0036C477 /* DoubleValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722FD1476EE8D0036C477 /* DoubleValueRefParser.cpp */; };
-		9EE7232A1476EE8D0036C477 /* EffectParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE722FE1476EE8D0036C477 /* EffectParser.cpp */; };
-		9EE7232B1476EE8D0036C477 /* EnumParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723001476EE8D0036C477 /* EnumParser.cpp */; };
-		9EE7232C1476EE8D0036C477 /* FleetPlansParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723021476EE8D0036C477 /* FleetPlansParser.cpp */; };
-		9EE7232D1476EE8D0036C477 /* Int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723041476EE8D0036C477 /* Int.cpp */; };
-		9EE7232E1476EE8D0036C477 /* IntValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723061476EE8D0036C477 /* IntValueRefParser.cpp */; };
-		9EE7232F1476EE8D0036C477 /* ItemsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723071476EE8D0036C477 /* ItemsParser.cpp */; };
-		9EE723301476EE8D0036C477 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723081476EE8D0036C477 /* Label.cpp */; };
-		9EE723311476EE8D0036C477 /* Lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7230A1476EE8D0036C477 /* Lexer.cpp */; };
-		9EE723321476EE8D0036C477 /* MonsterFleetPlansParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7230C1476EE8D0036C477 /* MonsterFleetPlansParser.cpp */; };
-		9EE723331476EE8D0036C477 /* Parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7230D1476EE8D0036C477 /* Parse.cpp */; };
-		9EE723341476EE8D0036C477 /* PlanetEnvironmentValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723111476EE8D0036C477 /* PlanetEnvironmentValueRefParser.cpp */; };
-		9EE723351476EE8D0036C477 /* PlanetSizeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723121476EE8D0036C477 /* PlanetSizeValueRefParser.cpp */; };
-		9EE723361476EE8D0036C477 /* PlanetTypeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723131476EE8D0036C477 /* PlanetTypeValueRefParser.cpp */; };
-		9EE723371476EE8D0036C477 /* ReportParseError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723141476EE8D0036C477 /* ReportParseError.cpp */; };
-		9EE723381476EE8D0036C477 /* ShipDesignsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723161476EE8D0036C477 /* ShipDesignsParser.cpp */; };
-		9EE723391476EE8D0036C477 /* ShipHullsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723171476EE8D0036C477 /* ShipHullsParser.cpp */; };
-		9EE7233A1476EE8D0036C477 /* ShipPartsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723181476EE8D0036C477 /* ShipPartsParser.cpp */; };
-		9EE7233B1476EE8D0036C477 /* SpecialsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE723191476EE8D0036C477 /* SpecialsParser.cpp */; };
-		9EE7233C1476EE8D0036C477 /* SpeciesParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231A1476EE8D0036C477 /* SpeciesParser.cpp */; };
-		9EE7233D1476EE8D0036C477 /* StarTypeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231B1476EE8D0036C477 /* StarTypeValueRefParser.cpp */; };
-		9EE7233E1476EE8D0036C477 /* StringValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231C1476EE8D0036C477 /* StringValueRefParser.cpp */; };
-		9EE7233F1476EE8D0036C477 /* TechsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231D1476EE8D0036C477 /* TechsParser.cpp */; };
-		9EE723401476EE8D0036C477 /* UniverseObjectTypeValueRefParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7231F1476EE8D0036C477 /* UniverseObjectTypeValueRefParser.cpp */; };
 		9EEEEA7013ACB3430085B1A0 /* ogre_plugins.cfg in Copy Config and Changelog */ = {isa = PBXBuildFile; fileRef = 3484E98E0F59A04D0083041E /* ogre_plugins.cfg */; };
 		9EEEEA7A13ACB91A0085B1A0 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7313ACB91A0085B1A0 /* libboost_filesystem.a */; };
 		9EEEEA7B13ACB91A0085B1A0 /* libboost_python.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEEEA7413ACB91A0085B1A0 /* libboost_python.a */; };
@@ -1206,6 +1212,9 @@
 		47B6160A0CF09ADC00318761 /* alutWaveform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alutWaveform.c; sourceTree = "<group>"; };
 		47B6160B0CF09ADC00318761 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* FreeOrion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FreeOrion; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1FEC7114A88E49002217DA /* UniverseServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UniverseServer.cpp; sourceTree = "<group>"; };
+		9E1FEC7414A88E8E002217DA /* Names.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Names.cpp; sourceTree = "<group>"; };
+		9E1FEC7514A88E8E002217DA /* Names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Names.h; sourceTree = "<group>"; };
 		9E207623143F986400A70502 /* ReportParseError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReportParseError.cpp; sourceTree = "<group>"; };
 		9E207625143F98A500A70502 /* LexerFwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexerFwd.h; sourceTree = "<group>"; };
 		9E207626143F98A500A70502 /* ReportParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportParseError.h; sourceTree = "<group>"; };
@@ -2596,6 +2605,9 @@
 		471D5CE40A98A3F900DA9C21 /* universe */ = {
 			isa = PBXGroup;
 			children = (
+				9E1FEC7414A88E8E002217DA /* Names.cpp */,
+				9E1FEC7514A88E8E002217DA /* Names.h */,
+				9E1FEC7114A88E49002217DA /* UniverseServer.cpp */,
 				34D3CE8A11D7DA03007C1E78 /* Species.cpp */,
 				34D3CE8B11D7DA03007C1E78 /* Species.h */,
 				471D5CE50A98A3F900DA9C21 /* Building.cpp */,
@@ -3266,6 +3278,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E617D68149F87D4002D5D93 /* Effect.cpp in Sources */,
+				9E617D3C149F87BB002D5D93 /* AlignmentsParser.cpp in Sources */,
+				9E617D3D149F87BB002D5D93 /* BuildingsParser.cpp in Sources */,
+				9E617D3E149F87BB002D5D93 /* ConditionParser.cpp in Sources */,
+				9E617D40149F87BB002D5D93 /* ConditionParser1.cpp in Sources */,
+				9E617D41149F87BB002D5D93 /* ConditionParser2.cpp in Sources */,
+				9E617D42149F87BB002D5D93 /* ConditionParser3.cpp in Sources */,
+				9E617D44149F87BB002D5D93 /* Double.cpp in Sources */,
+				9E617D46149F87BB002D5D93 /* DoubleValueRefParser.cpp in Sources */,
+				9E617D47149F87BB002D5D93 /* EffectParser.cpp in Sources */,
+				9E617D49149F87BB002D5D93 /* EnumParser.cpp in Sources */,
+				9E617D4B149F87BB002D5D93 /* FleetPlansParser.cpp in Sources */,
+				9E617D4C149F87BB002D5D93 /* Int.cpp in Sources */,
+				9E617D4E149F87BB002D5D93 /* IntValueRefParser.cpp in Sources */,
+				9E617D4F149F87BB002D5D93 /* ItemsParser.cpp in Sources */,
+				9E617D50149F87BB002D5D93 /* Label.cpp in Sources */,
+				9E617D52149F87BB002D5D93 /* Lexer.cpp in Sources */,
+				9E617D54149F87BB002D5D93 /* MonsterFleetPlansParser.cpp in Sources */,
+				9E617D55149F87BB002D5D93 /* Parse.cpp in Sources */,
+				9E617D58149F87BB002D5D93 /* PlanetEnvironmentValueRefParser.cpp in Sources */,
+				9E617D59149F87BB002D5D93 /* PlanetSizeValueRefParser.cpp in Sources */,
+				9E617D5A149F87BB002D5D93 /* PlanetTypeValueRefParser.cpp in Sources */,
+				9E617D5B149F87BB002D5D93 /* ReportParseError.cpp in Sources */,
+				9E617D5D149F87BB002D5D93 /* ShipDesignsParser.cpp in Sources */,
+				9E617D5E149F87BB002D5D93 /* ShipHullsParser.cpp in Sources */,
+				9E617D5F149F87BB002D5D93 /* ShipPartsParser.cpp in Sources */,
+				9E617D60149F87BB002D5D93 /* SpecialsParser.cpp in Sources */,
+				9E617D61149F87BB002D5D93 /* SpeciesParser.cpp in Sources */,
+				9E617D62149F87BB002D5D93 /* StarTypeValueRefParser.cpp in Sources */,
+				9E617D63149F87BB002D5D93 /* StringValueRefParser.cpp in Sources */,
+				9E617D64149F87BB002D5D93 /* TechsParser.cpp in Sources */,
+				9E617D65149F87BB002D5D93 /* UniverseObjectTypeValueRefParser.cpp in Sources */,
 				34D3CE8C11D7DA11007C1E78 /* Species.cpp in Sources */,
 				34F909BF118B1BA0003A9EF1 /* Vec3Utilities.cpp in Sources */,
 				34C4495E1182716E0071E09A /* Math.cpp in Sources */,
@@ -3293,7 +3337,6 @@
 				47103BF90CF04E5900A7DF2B /* XMLDoc.cpp in Sources */,
 				47103BFA0CF04E5900A7DF2B /* Building.cpp in Sources */,
 				47103BFB0CF04E5900A7DF2B /* Condition.cpp in Sources */,
-				47103BFF0CF04E5900A7DF2B /* Effect.cpp in Sources */,
 				47103C010CF04E5900A7DF2B /* Enums.cpp in Sources */,
 				47103C020CF04E5900A7DF2B /* Fleet.cpp in Sources */,
 				47103C030CF04E5900A7DF2B /* Meter.cpp in Sources */,
@@ -3322,37 +3365,7 @@
 				34B9F92D0F634A03005BF6A4 /* CombatShip.cpp in Sources */,
 				34B9F92E0F634A03005BF6A4 /* Obstacle.cpp in Sources */,
 				34B9F92F0F634A03005BF6A4 /* PathingEngine.cpp in Sources */,
-				9EE723221476EE8D0036C477 /* AlignmentsParser.cpp in Sources */,
-				9EE723231476EE8D0036C477 /* BuildingsParser.cpp in Sources */,
-				9EE723241476EE8D0036C477 /* ConditionParser.cpp in Sources */,
-				9EE723251476EE8D0036C477 /* ConditionParser1.cpp in Sources */,
-				9EE723261476EE8D0036C477 /* ConditionParser2.cpp in Sources */,
-				9EE723271476EE8D0036C477 /* ConditionParser3.cpp in Sources */,
-				9EE723281476EE8D0036C477 /* Double.cpp in Sources */,
-				9EE723291476EE8D0036C477 /* DoubleValueRefParser.cpp in Sources */,
-				9EE7232A1476EE8D0036C477 /* EffectParser.cpp in Sources */,
-				9EE7232B1476EE8D0036C477 /* EnumParser.cpp in Sources */,
-				9EE7232C1476EE8D0036C477 /* FleetPlansParser.cpp in Sources */,
-				9EE7232D1476EE8D0036C477 /* Int.cpp in Sources */,
-				9EE7232E1476EE8D0036C477 /* IntValueRefParser.cpp in Sources */,
-				9EE7232F1476EE8D0036C477 /* ItemsParser.cpp in Sources */,
-				9EE723301476EE8D0036C477 /* Label.cpp in Sources */,
-				9EE723311476EE8D0036C477 /* Lexer.cpp in Sources */,
-				9EE723321476EE8D0036C477 /* MonsterFleetPlansParser.cpp in Sources */,
-				9EE723331476EE8D0036C477 /* Parse.cpp in Sources */,
-				9EE723341476EE8D0036C477 /* PlanetEnvironmentValueRefParser.cpp in Sources */,
-				9EE723351476EE8D0036C477 /* PlanetSizeValueRefParser.cpp in Sources */,
-				9EE723361476EE8D0036C477 /* PlanetTypeValueRefParser.cpp in Sources */,
-				9EE723371476EE8D0036C477 /* ReportParseError.cpp in Sources */,
-				9EE723381476EE8D0036C477 /* ShipDesignsParser.cpp in Sources */,
-				9EE723391476EE8D0036C477 /* ShipHullsParser.cpp in Sources */,
-				9EE7233A1476EE8D0036C477 /* ShipPartsParser.cpp in Sources */,
-				9EE7233B1476EE8D0036C477 /* SpecialsParser.cpp in Sources */,
-				9EE7233C1476EE8D0036C477 /* SpeciesParser.cpp in Sources */,
-				9EE7233D1476EE8D0036C477 /* StarTypeValueRefParser.cpp in Sources */,
-				9EE7233E1476EE8D0036C477 /* StringValueRefParser.cpp in Sources */,
-				9EE7233F1476EE8D0036C477 /* TechsParser.cpp in Sources */,
-				9EE723401476EE8D0036C477 /* UniverseObjectTypeValueRefParser.cpp in Sources */,
+				9E1FEC7614A88E8E002217DA /* Names.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3360,6 +3373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1FEC7914A893B3002217DA /* memory.cpp in Sources */,
+				9E1FEC7A14A893B3002217DA /* name.cpp in Sources */,
+				9E1FEC7B14A893B3002217DA /* string_pool.cpp in Sources */,
 				34C9B34511DA2EA0003695F4 /* ClrConstants.cpp in Sources */,
 				34972D1A0F4B3D520015C864 /* OgreGUI.cpp in Sources */,
 				34CA5EC20F4F4CEA0002B5DB /* OgreGUIInputPlugin.cpp in Sources */,
@@ -3419,6 +3435,8 @@
 				2F6096CF12EF046B00F58913 /* ClientNetworking.cpp in Sources */,
 				9EDC04B21452C40500177A85 /* ObjectMap.cpp in Sources */,
 				9EDC04BA1452C53700177A85 /* EffectAccounting.cpp in Sources */,
+				9E1FEC7214A88E49002217DA /* UniverseServer.cpp in Sources */,
+				9E1FEC7714A88E8E002217DA /* Names.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
